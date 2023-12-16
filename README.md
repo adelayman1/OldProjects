@@ -1,4 +1,4 @@
-## JK Clone
+## VK Clone
 
 ![App Screenshot 1](https://github.com/adelayman1/OldProjects/assets/85571327/9656385a-0421-48a0-96a9-1f2ed657deb8)
 ![App Screenshot 2](https://github.com/adelayman1/OldProjects/assets/85571327/b5b8a701-596b-4979-b13c-d84342434bfa)
