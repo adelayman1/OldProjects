@@ -8,27 +8,41 @@
 ### Description:
 This project is an ambitious endeavor to replicate the core functionalities of the Instagram platform. Developed using Kotlin, it leverages cutting-edge Android technologies like StateFlow, RXjava, and Navigation component. Following the principle of a single activity, the app is designed to provide a seamless user experience across various screen sizes.
 
-### Technologies Utilized:
-- **Kotlin**: The primary programming language used for app development.
-- **StateFlow**: Employed for managing UI state changes efficiently.
-- **RXjava**: Utilized for reactive programming and handling asynchronous tasks.
-- **Navigation component**: Streamlines app navigation and enhances user flow.
-- **Firebase Realtime Database & Firebase Auth**: Integrated for robust authentication and real-time data syncing.
-- **MVVM architecture**: Ensures a clean separation of UI and business logic.
-- **ViewBinding**: Facilitates more robust and efficient view interactions.
-- **Repository Pattern**: Enhances data abstraction and separation of concerns.
-- **Support for Different Screen Sizes**: Ensures a consistent user experience across devices.
+### Technologies
+- Kotlin
+- StateFlow
+- RXjava
+- Navigation component
+- Single activity concept
+- firebase realtime database & firebase auth
+- mvvm architecture
+- viewbinding
+- repository pattern
+- support different screen size
 
-### Key App Features:
-- **Post Creation**: Users can create posts with embedded YouTube videos or photos.
-- **User Profiles**: Complete profile management, including information editing and hints.
-- **Social Interaction**: Follow users, view followers list, like, comment, and share posts.
-- **Stories**: Create, view, and edit stories before sharing.
-- **Privacy Controls**: Manage post visibility, birthday visibility, comment permissions, and more.
-- **Advanced Functionalities**:
-- Account verification,
-- real-time chat,
-- hashtag support,
--  account and hashtag search,
--  image size optimization before uploading,
--  and robust authentication mechanisms.
+### App Features:
+- Add posts with YouTube videos
+- Add posts with photo
+- Users Profile
+- Profile edit
+- see Followers list
+- Add hint to profile
+- Add and delete information about you in your profile
+- Change Account type(Normal account - private account - web account)
+- View posts of people you are following firstly
+- Add strories and view strories
+- Edit stories photos before add it
+- Post like
+- comment on posts
+-  Change who can see your post( everyone or your followers only)
+-  Change your birthday visibility (view day and months only - view all birthday date - don't view your birthday date)
+- Change Enable or disable comments on post
+- Accounts verification
+- See only your followers stories
+- Chat with users
+- Share posts and accounts
+- add hashTags on post
+- search on accounts and hashTags
+- reduce umage size before upload it
+- sign-in
+- Sign-up
