@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_7sdp"
+    android:layout_marginBottom="@dimen/_7sdp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivAvatarSearch"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginLeft="@dimen/_7sdp"
+        android:src="@color/black" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tvNameSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@raw/rm"
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/tvLinkSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://abcdefg"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textSize="@dimen/_10ssp"
+        android:fontFamily="@raw/rm"
+        android:textColor="@color/hint"/>
+    </LinearLayout>
+</LinearLayout>

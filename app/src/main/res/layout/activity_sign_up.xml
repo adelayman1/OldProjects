@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    <data>-->
+<!--            <variable name="viewmodel" type="com.learn.jk.presentation.signUpScreen.SignUpViewModel"/>-->
+<!--    </data>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:backgroundTint="@color/Background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".presentation.signUpScreen.SignUpActivity">
+
+    <LinearLayout
+        android:id="@+id/lnFirstSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:fontFamily="@raw/rm"
+
+            android:text="Profile Information"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+        <EditText
+            android:id="@+id/etFirstNameSignUp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/small_radius"
+            android:hint="First name"
+            android:inputType="text"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="@color/hint" />
+
+        <EditText
+            android:id="@+id/etLastNameSignUp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/small_radius"
+            android:hint="Last name"
+            android:inputType="text"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="@color/hint" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:text="Date of birth"
+                android:textColor="@color/hint"
+                android:textSize="@dimen/_13ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/spinnerDay"
+                    android:layout_width="wrap_content"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_radius"
+                    android:hint="enter day"
+                    android:textColorHint="@color/hint"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+                <Spinner
+                    android:id="@+id/spinnerMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/small_radius" />
+                <Spinner
+                    android:id="@+id/spinnerYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_37sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/small_radius" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:text="Gender"
+                android:textColor="@color/hint"
+                android:textSize="@dimen/_13ssp" />
+
+            <RadioGroup
+                android:id="@+id/genderGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/hint"
+                    android:text="Male"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/hint"
+                    android:text="Female"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13ssp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/note"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="After SignIn you will get access to use all of jk IDS feature"
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/login_button"
+                android:fontFamily="sans-serif-medium"
+                android:text="Continue"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:text="Already in JK?"
+                    android:textColor="@color/hint"
+                    android:textSize="@dimen/_13ssp" />
+
+                <TextView
+                    android:id="@+id/tvSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:text="Sign in"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnFinishSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Your email"
+            android:textColor="@color/hint"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:id="@+id/etEmailSignUp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/small_radius"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="@color/hint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Your password"
+            android:textColor="@color/hint"
+            android:textSize="@dimen/_13ssp" />
+
+        <EditText
+            android:id="@+id/etPasswordSignUp"
+            android:layout_width="match_parent"
+            android:textColor="@color/white"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:inputType="textPassword"
+            android:background="@drawable/small_radius"
+            android:hint="Password"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textColorHint="@color/hint" />
+
+        <Button
+            android:id="@+id/btnFinishSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+
+            android:layout_marginRight="@dimen/_10sdp"
+            android:background="@drawable/login_button"
+            android:fontFamily="sans-serif-medium"
+            android:text="Sign up"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13ssp" />
+    </LinearLayout>
+</LinearLayout>

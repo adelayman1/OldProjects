@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.learn.jk">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_wk"
+        android:name=".Application"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_wk_round"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.Jk"
+        tools:ignore="HardcodedDebugMode"
+        tools:replace="android:supportsRtl">
+        <activity android:name=".presentation.profileScreen.FollowersActivity"></activity>
+        <activity android:name=".presentation.commentScreen.ViewPostActivity" />
+        <activity android:name=".presentation.messageScreen.ChatActivity" />
+        <activity android:name=".presentation.commentScreen.CommentActivity" />
+        <activity android:name=".presentation.profileScreen.editScreen.EditActivity" />
+        <activity android:name=".presentation.addPostScreen.AddPostActivity" />
+        <activity android:name=".presentation.profileScreen.ProfileActivity" />
+        <activity android:name=".presentation.mainScreen.BaseActivity" />
+        <activity android:name=".presentation.signUpScreen.SignUpActivity" />
+        <activity android:name=".presentation.loginScreen.LoginActivity" />
+        <activity android:name=".presentation.splashScreen.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="wk.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
