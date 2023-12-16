@@ -44,7 +44,7 @@ This repository contains a collection of my older projects that I've decided to 
 - Share posts and accounts
 - add hashTags on post
 - search on accounts and hashTags
-- reduce umage size before upload it
+- reduce image size before upload it
 - sign-in
 - Sign-up
 
