@@ -1,7 +1,3 @@
-Certainly! Here's an expanded and more detailed description for your Instagram clone app's GitHub repository:
-
----
-
 ## JK Clone
 
 ![App Screenshot 1](https://github.com/adelayman1/OldProjects/assets/85571327/9656385a-0421-48a0-96a9-1f2ed657deb8)
