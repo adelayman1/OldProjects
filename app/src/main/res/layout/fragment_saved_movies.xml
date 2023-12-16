@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.savedScreen.SavedMoviesFragment">
+    <ProgressBar
+        android:id="@+id/loadingProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/lnSavedMovies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="@dimen/_20sdp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@raw/manrope_bold"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_13ssp"
+            android:text="SavedMovies"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_17ssp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcSavedMovies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/saved_movie_item"
+            android:layout_marginTop="@dimen/_10sdp"/>
+    </LinearLayout>
+</FrameLayout>

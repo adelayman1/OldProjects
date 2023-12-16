@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Feed"
+        android:icon="@drawable/ic_baseline_dashboard_24"/>
+
+    <item
+        android:id="@+id/savedMoviesFragment"
+        android:title="saved"
+        android:icon="@drawable/baseline_turned_in_not_black_24"/>
+
+    <item
+        android:id="@+id/profileFragment"
+        android:title="profile"
+        android:icon="@drawable/outline_person_black_24"/>
+</menu>
